@@ -1,0 +1,18 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: BOOK-SERVICE
+ # zipkin:
+  #  base-url: http://127.0.0.1:9411/
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/bookdb/books
+    username: root
+    password: root
+  jpa:
+    hibernate.ddl-auto: update
+    hibernate.dialect: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+    show-sql: true
