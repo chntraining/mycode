@@ -1,0 +1,5 @@
+package com.deeps.student.client;
+
+public interface BookServiceClient {
+
+}

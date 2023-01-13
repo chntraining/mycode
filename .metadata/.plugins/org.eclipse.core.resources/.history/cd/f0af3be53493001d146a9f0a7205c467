@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 9001
+ADD target/book-service-ms.jar book-service-ms.jar
+ENTRYPOINT ["java","jar","book-service-ms"]
